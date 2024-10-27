@@ -1,0 +1,136 @@
+<!-- Portfolio Website -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .one{
+            width: 100%;
+            height: 10vh;
+            background-color: aquamarine;
+            color:black;
+            font-size: large;
+            position: relative;
+        }
+        .one table{
+            position: absolute;
+            bottom: 0px;
+            right: 30px;
+            /* padding: 5px; */
+        }
+        .one td{
+            padding-left: 30px;
+        }
+        .one h2{
+            margin: 0px;
+            position: absolute;
+             left: 25%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #i1{
+            width: 100%;
+            height: 100%;
+
+        }
+        .two{
+            width: 100%;
+            height: 85vh;
+            background-color: lightcyan;
+            position: relative;
+        }
+        .t1{
+            position: absolute;
+            left: 150px;
+            top: 140px;
+            color: aliceblue;
+            font-size: large;
+            
+        }
+        .t2 img{
+            position: absolute;
+            width: 240px;
+            height: 320px;
+            right: 250px;
+            top: 70px;
+            border-radius: 250px ;
+            /* display: none; */
+        }
+        .hidden {
+            position: absolute;
+            width: 300px;
+            height: 320px;
+            right: 250px;
+            top: 70px;
+            color: aliceblue;
+            border-radius: 250px ;
+            font-size: small;
+             display: none; 
+        }
+        .t3{
+            position:absolute;
+            left: 250px;
+            top: 350px;
+        }
+        .three{
+            width: 100%;
+            height: 5vh;
+            background-color: aquamarine;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="one" id="one">
+        <h2>DhineshKumar</h2>
+        <table>
+            <tr>
+                <td><b>Home</b></td>
+                <td><b>Education</b></td>
+                <td><b>Skills</b></td>
+                <td><b>Projects</b></td>
+                <td><b>Contact</b></td>
+            </tr>
+        </table>
+    </div>
+    <div class="two">
+        <img src="3.jpeg" alt="" id="i1">
+        <div class="t1">
+            <h1 id="h1">Hello There,</h1>
+            <h2 id="h2">This is Dhinesh</h2>
+            <h3 id="h3">Full Stack Java Developer</h3>
+        </div>
+        <div class="t2" id="t2">
+            <img src="port1.jpg" alt="">
+        </div>
+        <div class="hidden" id="hidden">
+            <h1>Full Stack Java Developer</h1>
+            <h1>MERN Stack Developer</h1>
+        </div>
+        <div class="t3">
+            <button id="b"><b>About</b></button>
+        </div>
+    </div>
+    <div class="three">
+        <!-- <h3>dhineshdeveloper07@gamil.com</h3> -->
+    </div>
+
+
+    <script>
+       document.getElementById("b").onclick = function() {
+    document.getElementById("h1").innerHTML = 'Full Stack Developer';
+    document.getElementById("h2").innerHTML = 'Knowledge Institute of Technology';
+    document.getElementById("h3").innerHTML = 'BE Graduate (CSE)';
+    document.getElementById("t2").style.display='none';
+    document.getElementById("hidden").style.display='block';
+    document.getElementById("one").style.backgroundColor='lightcyan';
+    // document.getElementsByClassName("one")[0].style.backgroundColor='grey';
+};
+
+    </script>
+ </body>
+ </html>

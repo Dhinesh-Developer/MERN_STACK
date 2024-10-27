@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+<body>
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h1><b>Text to speech</b></h1>
+                </td>
+            </tr>
+            <tr>
+                
+                <td>
+                    <input type="text"  id="1">
+                </td>
+            </tr>
+            <tr>
+                <td><button id="s" onclick="speak">Speak</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var speech = new SpeechSynthesisUtterance();
+        function speak(){
+            var textToSpeak = document.getElementById("1").value;
+            if(textToSpeak.trim()!==""){
+                speech.text = textToSpeak;
+                speech.rate = 1;
+                speech.volume = 1;
+                speech.pitch = 1;
+                window.speechSynthesis.speak(speech);
+            }
+            else{
+                alert("Please Enter the some text");
+            }
+        }
+    </script>
+    
+</body>
+</html>

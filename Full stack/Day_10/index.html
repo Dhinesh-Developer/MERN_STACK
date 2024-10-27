@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 id="h1">is java script is easy?</h1>
+    <button id="b1">yes</button>
+    <button id="b2">No</button>
+
+    <script>
+        document.getElementById("b1").onclick=function(){
+            document.getElementById("h1").innerHTML='Yah it is easy';
+            document.getElementById("b1").style.backgroundColor='lightgreen';
+        }
+        document.getElementById("b2").onclick=function(){
+            document.getElementById("h1").innerHTML='if you try , then it will easy';
+            document.getElementById("b2").style.backgroundColor='lightblue';
+        }
+        document.getElementById("h1").onmouseover=function(){
+            document.getElementById("h1").innerHTML='java script review';
+        }
+        // document.getElementById("h1").style.backgroundColor='green';
+        alert("please pratice everyday");
+       
+        
+    </script>
+</body>
+</html>

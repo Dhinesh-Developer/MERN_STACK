@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">Is Javascript is easy?</h1>
+
+    <button id="1">Yes</button>
+    <button id="2">NO</button>
+
+    <script>
+        document.getElementById("1").onclick=function(){
+            document.getElementById("h").innerHTML="Yah it is easy";
+        }
+        document.getElementById("2").onclick=function(){
+            document.getElementById("h").innerHTML="Yes it is tough when u not pratice";
+        }
+        document.getElementById("h").onmouseover=function(){
+            document.getElementById("h").innerHTML="Review about Java Script";
+        }
+
+    </script>
+</body>
+</html>
